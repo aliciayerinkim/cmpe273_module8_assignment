@@ -43,12 +43,8 @@ The client uses `PRIMARY_URL` and `SECONDARY_URL` if they are set. Otherwise it 
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    C[Client] -->|writes and reads| P[Primary :8001]
-    C -->|reads only| S[Secondary :8002]
-    P -->|async replication, can be paused| S
-```
+<img width="1520" height="720" alt="architecture (2)" src="https://github.com/user-attachments/assets/1ee95b81-b7d3-4297-87d0-6a04cc705d85" />
+
 
 ## How it works
 
